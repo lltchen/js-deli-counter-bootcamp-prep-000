@@ -1,7 +1,12 @@
-var katzDeliLine = []
-var getOnLine = katzDeliLine.push(getOnLine)
-var numberOnLine = katzDeliLine.length;
+var katzDeliLine = [];
 
-function takeANumber(katzDeliLine,name){
-    console.log(`Welcome, ${name}. You are number ${numberOnLine} in line.`)
-    }
+function takeANumber(katzDeli, name) {
+  katzDeliLine.push(`${name}`);
+  return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+}
+
+function nowServing(katzDeliLine){
+  if (katzDeliLine.length <= 1){
+    return(`Currently serving ${katzDeliLine[0]}`)
+  }
+}
